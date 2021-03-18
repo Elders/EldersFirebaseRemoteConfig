@@ -65,6 +65,30 @@
     return v;
 }
 
+- (void)fetchWithCompletionHandler:(void (^)(FIRRemoteConfigFetchStatus, NSError * _Nullable))completionHandler {
+    
+    if (completionHandler) {
+        
+        completionHandler(FIRRemoteConfigFetchStatusSuccess, nil);
+    }
+}
+
+- (void)activateWithCompletion:(void (^)(BOOL, NSError * _Nullable))completion {
+    
+    if (completion) {
+        
+        completion(YES, nil);
+    }
+}
+
+- (void)fetchAndActivateWithCompletionHandler:(void (^)(FIRRemoteConfigFetchAndActivateStatus, NSError * _Nullable))completionHandler {
+    
+    if (completionHandler) {
+        
+        completionHandler(FIRRemoteConfigFetchAndActivateStatusSuccessUsingPreFetchedData, nil);
+    }
+}
+
 @end
 
 @implementation FIRRemoteConfig (Preview)
