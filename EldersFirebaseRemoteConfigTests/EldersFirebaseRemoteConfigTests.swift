@@ -6,6 +6,7 @@
 //
 
 import XCTest
+import Firebase
 @testable import EldersFirebaseRemoteConfig
 
 class EldersFirebaseRemoteConfigTests: XCTestCase {
@@ -18,16 +19,19 @@ class EldersFirebaseRemoteConfigTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testRemoteConfigPreviewDefaultValuesInjection() throws {
+        
+        let remoteConfig = RemoteConfig.preview(withDefaults: ["asd": NSNumber(5), "eldersDefaultsTestValue2": NSNumber(3)])
+        
+        //this value is supplied from library defaults - it shold be present
+        XCTAssertEqual(remoteConfig.configValue(for: "eldersDefaultsTestValue1").stringValue, "da ve")
+        
+        //this value is supplied from library defaults and is overriden by user - it shold be present with user's value
+        XCTAssertEqual(remoteConfig.configValue(for: "eldersDefaultsTestValue2").numberValue.intValue, 3)
+        
+        //this value is suppluied by the user - it should be present
+        XCTAssertEqual(remoteConfig.configValue(for: "asd").numberValue.intValue, 5)
     }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
-
 }
+
+

@@ -16,3 +16,6 @@ FOUNDATION_EXPORT const unsigned char EldersFirebaseRemoteConfigVersionString[];
 // In this header, you should import all the public headers of your framework using statements like #import <EldersFirebaseRemoteConfig/PublicHeader.h>
 
 
+#import <EldersFirebaseRemoteConfig/RemoteConfig+Update.h>
+#import <EldersFirebaseRemoteConfig/RemoteConfig+Defaults.h>
+#import <EldersFirebaseRemoteConfig/RemoteConfig+Preview.h>

@@ -3,13 +3,28 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9D346ACF849EA40E56FA56ED /* Pods_EldersFirebaseRemoteConfig.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E12F48806CFA56F5777C851D /* Pods_EldersFirebaseRemoteConfig.framework */; };
+		E2BCF9624473E256DB395BE8 /* Pods_EldersFirebaseRemoteConfig_EldersFirebaseRemoteConfigTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EF5D03B9ECDFA2B56E2E185 /* Pods_EldersFirebaseRemoteConfig_EldersFirebaseRemoteConfigTests.framework */; };
 		E618AE342602550C0000FD0C /* EldersFirebaseRemoteConfig.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E618AE2A2602550C0000FD0C /* EldersFirebaseRemoteConfig.framework */; };
 		E618AE392602550C0000FD0C /* EldersFirebaseRemoteConfigTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E618AE382602550C0000FD0C /* EldersFirebaseRemoteConfigTests.swift */; };
 		E618AE3B2602550C0000FD0C /* EldersFirebaseRemoteConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = E618AE2D2602550C0000FD0C /* EldersFirebaseRemoteConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E618AE56260256A70000FD0C /* RemoteConfig+Key.swift in Sources */ = {isa = PBXBuildFile; fileRef = E618AE4C260256A60000FD0C /* RemoteConfig+Key.swift */; };
+		E618AE57260256A70000FD0C /* RemoteConfig+ApplicationUpdate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E618AE4D260256A70000FD0C /* RemoteConfig+ApplicationUpdate.swift */; };
+		E618AE5C260256A70000FD0C /* ApplicationUpdate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E618AE53260256A70000FD0C /* ApplicationUpdate.swift */; };
+		E618AE89260348FF0000FD0C /* RemoteConfig+Combine.swift in Sources */ = {isa = PBXBuildFile; fileRef = E618AE88260348FF0000FD0C /* RemoteConfig+Combine.swift */; };
+		E618AE8E2603499A0000FD0C /* RemoteConfig+Update.h in Headers */ = {isa = PBXBuildFile; fileRef = E618AE8C2603499A0000FD0C /* RemoteConfig+Update.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E618AE8F2603499A0000FD0C /* RemoteConfig+Update.m in Sources */ = {isa = PBXBuildFile; fileRef = E618AE8D2603499A0000FD0C /* RemoteConfig+Update.m */; };
+		E618AE9426034A270000FD0C /* RemoteConfig+Defaults.h in Headers */ = {isa = PBXBuildFile; fileRef = E618AE9226034A270000FD0C /* RemoteConfig+Defaults.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E618AE9526034A270000FD0C /* RemoteConfig+Defaults.m in Sources */ = {isa = PBXBuildFile; fileRef = E618AE9326034A270000FD0C /* RemoteConfig+Defaults.m */; };
+		E618AEBE26035EA40000FD0C /* RemoteConfig+Preview.m in Sources */ = {isa = PBXBuildFile; fileRef = E618AEBC26035EA40000FD0C /* RemoteConfig+Preview.m */; };
+		E618AEBF26035EA40000FD0C /* RemoteConfig+Preview.h in Headers */ = {isa = PBXBuildFile; fileRef = E618AEBD26035EA40000FD0C /* RemoteConfig+Preview.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E618AECF2603788C0000FD0C /* RemoteConfig+Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = E618AECE2603788C0000FD0C /* RemoteConfig+Defaults.swift */; };
+		E618AED3260378C40000FD0C /* RemoteConfig+Preview.swift in Sources */ = {isa = PBXBuildFile; fileRef = E618AED2260378C40000FD0C /* RemoteConfig+Preview.swift */; };
+		E618AEE9260383C60000FD0C /* ApplicationUpdateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E618AEE8260383C60000FD0C /* ApplicationUpdateTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,12 +38,38 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5FC28ECB9476C39E1A82B7F6 /* Pods-EldersFirebaseRemoteConfig-EldersFirebaseRemoteConfigTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EldersFirebaseRemoteConfig-EldersFirebaseRemoteConfigTests.release.xcconfig"; path = "Target Support Files/Pods-EldersFirebaseRemoteConfig-EldersFirebaseRemoteConfigTests/Pods-EldersFirebaseRemoteConfig-EldersFirebaseRemoteConfigTests.release.xcconfig"; sourceTree = "<group>"; };
+		9EF5D03B9ECDFA2B56E2E185 /* Pods_EldersFirebaseRemoteConfig_EldersFirebaseRemoteConfigTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EldersFirebaseRemoteConfig_EldersFirebaseRemoteConfigTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5C76864444661B392469105 /* Pods-EldersFirebaseRemoteConfig-EldersFirebaseRemoteConfigTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EldersFirebaseRemoteConfig-EldersFirebaseRemoteConfigTests.debug.xcconfig"; path = "Target Support Files/Pods-EldersFirebaseRemoteConfig-EldersFirebaseRemoteConfigTests/Pods-EldersFirebaseRemoteConfig-EldersFirebaseRemoteConfigTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CA5171609D6AAF0C3C786BC6 /* Pods-EldersFirebaseRemoteConfig.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EldersFirebaseRemoteConfig.release.xcconfig"; path = "Target Support Files/Pods-EldersFirebaseRemoteConfig/Pods-EldersFirebaseRemoteConfig.release.xcconfig"; sourceTree = "<group>"; };
+		DECEC60247A0707B41F26EB2 /* Pods-EldersFirebaseRemoteConfig.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EldersFirebaseRemoteConfig.debug.xcconfig"; path = "Target Support Files/Pods-EldersFirebaseRemoteConfig/Pods-EldersFirebaseRemoteConfig.debug.xcconfig"; sourceTree = "<group>"; };
+		E12F48806CFA56F5777C851D /* Pods_EldersFirebaseRemoteConfig.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EldersFirebaseRemoteConfig.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E618AE2A2602550C0000FD0C /* EldersFirebaseRemoteConfig.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EldersFirebaseRemoteConfig.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E618AE2D2602550C0000FD0C /* EldersFirebaseRemoteConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EldersFirebaseRemoteConfig.h; sourceTree = "<group>"; };
 		E618AE2E2602550C0000FD0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E618AE332602550C0000FD0C /* EldersFirebaseRemoteConfigTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EldersFirebaseRemoteConfigTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E618AE382602550C0000FD0C /* EldersFirebaseRemoteConfigTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EldersFirebaseRemoteConfigTests.swift; sourceTree = "<group>"; };
 		E618AE3A2602550C0000FD0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E618AE4C260256A60000FD0C /* RemoteConfig+Key.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RemoteConfig+Key.swift"; sourceTree = "<group>"; };
+		E618AE4D260256A70000FD0C /* RemoteConfig+ApplicationUpdate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RemoteConfig+ApplicationUpdate.swift"; sourceTree = "<group>"; };
+		E618AE4F260256A70000FD0C /* get_service_account_project_id.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = get_service_account_project_id.swift; sourceTree = "<group>"; };
+		E618AE50260256A70000FD0C /* generate_service_account_jws.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = generate_service_account_jws.swift; sourceTree = "<group>"; };
+		E618AE51260256A70000FD0C /* set_remote_config_recommended_update.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = set_remote_config_recommended_update.swift; sourceTree = "<group>"; };
+		E618AE52260256A70000FD0C /* get_service_account_token_url.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = get_service_account_token_url.swift; sourceTree = "<group>"; };
+		E618AE53260256A70000FD0C /* ApplicationUpdate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationUpdate.swift; sourceTree = "<group>"; };
+		E618AE6B26025A340000FD0C /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		E618AE88260348FF0000FD0C /* RemoteConfig+Combine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RemoteConfig+Combine.swift"; sourceTree = "<group>"; };
+		E618AE8C2603499A0000FD0C /* RemoteConfig+Update.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RemoteConfig+Update.h"; sourceTree = "<group>"; };
+		E618AE8D2603499A0000FD0C /* RemoteConfig+Update.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "RemoteConfig+Update.m"; sourceTree = "<group>"; };
+		E618AE9226034A270000FD0C /* RemoteConfig+Defaults.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RemoteConfig+Defaults.h"; sourceTree = "<group>"; };
+		E618AE9326034A270000FD0C /* RemoteConfig+Defaults.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "RemoteConfig+Defaults.m"; sourceTree = "<group>"; };
+		E618AEBC26035EA40000FD0C /* RemoteConfig+Preview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RemoteConfig+Preview.m"; sourceTree = "<group>"; };
+		E618AEBD26035EA40000FD0C /* RemoteConfig+Preview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RemoteConfig+Preview.h"; sourceTree = "<group>"; };
+		E618AECE2603788C0000FD0C /* RemoteConfig+Defaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RemoteConfig+Defaults.swift"; sourceTree = "<group>"; };
+		E618AED2260378C40000FD0C /* RemoteConfig+Preview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RemoteConfig+Preview.swift"; sourceTree = "<group>"; };
+		E618AEE8260383C60000FD0C /* ApplicationUpdateTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationUpdateTests.swift; sourceTree = "<group>"; };
+		E618AEEC260384470000FD0C /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		E618AEEF260384680000FD0C /* Podfile.lock */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile.lock; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D346ACF849EA40E56FA56ED /* Pods_EldersFirebaseRemoteConfig.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,18 +86,44 @@
 			buildActionMask = 2147483647;
 			files = (
 				E618AE342602550C0000FD0C /* EldersFirebaseRemoteConfig.framework in Frameworks */,
+				E2BCF9624473E256DB395BE8 /* Pods_EldersFirebaseRemoteConfig_EldersFirebaseRemoteConfigTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		092DC0FB87CED1D89D8BBD61 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E12F48806CFA56F5777C851D /* Pods_EldersFirebaseRemoteConfig.framework */,
+				9EF5D03B9ECDFA2B56E2E185 /* Pods_EldersFirebaseRemoteConfig_EldersFirebaseRemoteConfigTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1BFCCB64D79366420756D2D1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DECEC60247A0707B41F26EB2 /* Pods-EldersFirebaseRemoteConfig.debug.xcconfig */,
+				CA5171609D6AAF0C3C786BC6 /* Pods-EldersFirebaseRemoteConfig.release.xcconfig */,
+				B5C76864444661B392469105 /* Pods-EldersFirebaseRemoteConfig-EldersFirebaseRemoteConfigTests.debug.xcconfig */,
+				5FC28ECB9476C39E1A82B7F6 /* Pods-EldersFirebaseRemoteConfig-EldersFirebaseRemoteConfigTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		E618AE202602550C0000FD0C = {
 			isa = PBXGroup;
 			children = (
+				E618AEEC260384470000FD0C /* .gitignore */,
+				E618AE6B26025A340000FD0C /* Podfile */,
+				E618AEEF260384680000FD0C /* Podfile.lock */,
 				E618AE2C2602550C0000FD0C /* EldersFirebaseRemoteConfig */,
 				E618AE372602550C0000FD0C /* EldersFirebaseRemoteConfigTests */,
 				E618AE2B2602550C0000FD0C /* Products */,
+				1BFCCB64D79366420756D2D1 /* Pods */,
+				092DC0FB87CED1D89D8BBD61 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -72,6 +140,19 @@
 			isa = PBXGroup;
 			children = (
 				E618AE2D2602550C0000FD0C /* EldersFirebaseRemoteConfig.h */,
+				E618AE4C260256A60000FD0C /* RemoteConfig+Key.swift */,
+				E618AE88260348FF0000FD0C /* RemoteConfig+Combine.swift */,
+				E618AE8C2603499A0000FD0C /* RemoteConfig+Update.h */,
+				E618AE8D2603499A0000FD0C /* RemoteConfig+Update.m */,
+				E618AE9226034A270000FD0C /* RemoteConfig+Defaults.h */,
+				E618AE9326034A270000FD0C /* RemoteConfig+Defaults.m */,
+				E618AECE2603788C0000FD0C /* RemoteConfig+Defaults.swift */,
+				E618AEBD26035EA40000FD0C /* RemoteConfig+Preview.h */,
+				E618AEBC26035EA40000FD0C /* RemoteConfig+Preview.m */,
+				E618AED2260378C40000FD0C /* RemoteConfig+Preview.swift */,
+				E618AE53260256A70000FD0C /* ApplicationUpdate.swift */,
+				E618AE4D260256A70000FD0C /* RemoteConfig+ApplicationUpdate.swift */,
+				E618AE4E260256A70000FD0C /* scripts */,
 				E618AE2E2602550C0000FD0C /* Info.plist */,
 			);
 			path = EldersFirebaseRemoteConfig;
@@ -81,9 +162,21 @@
 			isa = PBXGroup;
 			children = (
 				E618AE382602550C0000FD0C /* EldersFirebaseRemoteConfigTests.swift */,
+				E618AEE8260383C60000FD0C /* ApplicationUpdateTests.swift */,
 				E618AE3A2602550C0000FD0C /* Info.plist */,
 			);
 			path = EldersFirebaseRemoteConfigTests;
+			sourceTree = "<group>";
+		};
+		E618AE4E260256A70000FD0C /* scripts */ = {
+			isa = PBXGroup;
+			children = (
+				E618AE4F260256A70000FD0C /* get_service_account_project_id.swift */,
+				E618AE50260256A70000FD0C /* generate_service_account_jws.swift */,
+				E618AE51260256A70000FD0C /* set_remote_config_recommended_update.swift */,
+				E618AE52260256A70000FD0C /* get_service_account_token_url.swift */,
+			);
+			path = scripts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -94,6 +187,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E618AE3B2602550C0000FD0C /* EldersFirebaseRemoteConfig.h in Headers */,
+				E618AE8E2603499A0000FD0C /* RemoteConfig+Update.h in Headers */,
+				E618AE9426034A270000FD0C /* RemoteConfig+Defaults.h in Headers */,
+				E618AEBF26035EA40000FD0C /* RemoteConfig+Preview.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,6 +200,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E618AE3E2602550C0000FD0C /* Build configuration list for PBXNativeTarget "EldersFirebaseRemoteConfig" */;
 			buildPhases = (
+				C1A53660AE6CC1E5B993918C /* [CP] Check Pods Manifest.lock */,
 				E618AE252602550C0000FD0C /* Headers */,
 				E618AE262602550C0000FD0C /* Sources */,
 				E618AE272602550C0000FD0C /* Frameworks */,
@@ -122,9 +219,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E618AE412602550C0000FD0C /* Build configuration list for PBXNativeTarget "EldersFirebaseRemoteConfigTests" */;
 			buildPhases = (
+				D99EB346D420744D0E831B96 /* [CP] Check Pods Manifest.lock */,
 				E618AE2F2602550C0000FD0C /* Sources */,
 				E618AE302602550C0000FD0C /* Frameworks */,
 				E618AE312602550C0000FD0C /* Resources */,
+				5B9BB0C1ACF94FE8CF6BFBD9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -147,6 +246,7 @@
 				TargetAttributes = {
 					E618AE292602550C0000FD0C = {
 						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
 					};
 					E618AE322602550C0000FD0C = {
 						CreatedOnToolsVersion = 12.4;
@@ -189,11 +289,84 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5B9BB0C1ACF94FE8CF6BFBD9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EldersFirebaseRemoteConfig-EldersFirebaseRemoteConfigTests/Pods-EldersFirebaseRemoteConfig-EldersFirebaseRemoteConfigTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EldersFirebaseRemoteConfig-EldersFirebaseRemoteConfigTests/Pods-EldersFirebaseRemoteConfig-EldersFirebaseRemoteConfigTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EldersFirebaseRemoteConfig-EldersFirebaseRemoteConfigTests/Pods-EldersFirebaseRemoteConfig-EldersFirebaseRemoteConfigTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C1A53660AE6CC1E5B993918C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EldersFirebaseRemoteConfig-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D99EB346D420744D0E831B96 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EldersFirebaseRemoteConfig-EldersFirebaseRemoteConfigTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E618AE262602550C0000FD0C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E618AE8F2603499A0000FD0C /* RemoteConfig+Update.m in Sources */,
+				E618AE57260256A70000FD0C /* RemoteConfig+ApplicationUpdate.swift in Sources */,
+				E618AED3260378C40000FD0C /* RemoteConfig+Preview.swift in Sources */,
+				E618AE56260256A70000FD0C /* RemoteConfig+Key.swift in Sources */,
+				E618AECF2603788C0000FD0C /* RemoteConfig+Defaults.swift in Sources */,
+				E618AE89260348FF0000FD0C /* RemoteConfig+Combine.swift in Sources */,
+				E618AE9526034A270000FD0C /* RemoteConfig+Defaults.m in Sources */,
+				E618AE5C260256A70000FD0C /* ApplicationUpdate.swift in Sources */,
+				E618AEBE26035EA40000FD0C /* RemoteConfig+Preview.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,6 +375,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E618AE392602550C0000FD0C /* EldersFirebaseRemoteConfigTests.swift in Sources */,
+				E618AEE9260383C60000FD0C /* ApplicationUpdateTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,7 +442,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -326,7 +500,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -340,7 +514,9 @@
 		};
 		E618AE3F2602550C0000FD0C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DECEC60247A0707B41F26EB2 /* Pods-EldersFirebaseRemoteConfig.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -356,6 +532,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.elders.EldersFirebaseRemoteConfig;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -363,7 +540,9 @@
 		};
 		E618AE402602550C0000FD0C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA5171609D6AAF0C3C786BC6 /* Pods-EldersFirebaseRemoteConfig.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -386,8 +565,18 @@
 		};
 		E618AE422602550C0000FD0C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5C76864444661B392469105 /* Pods-EldersFirebaseRemoteConfig-EldersFirebaseRemoteConfigTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+					"PB_FIELD_32BIT=1",
+					"PB_NO_PACKED_STRUCTS=1",
+					"PB_ENABLE_MALLOC=1",
+					"UNIT_TESTS=1",
+				);
 				INFOPLIST_FILE = EldersFirebaseRemoteConfigTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -396,6 +585,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.elders.EldersFirebaseRemoteConfigTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) UNIT_TESTS";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -403,8 +593,18 @@
 		};
 		E618AE432602550C0000FD0C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5FC28ECB9476C39E1A82B7F6 /* Pods-EldersFirebaseRemoteConfig-EldersFirebaseRemoteConfigTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+					"PB_FIELD_32BIT=1",
+					"PB_NO_PACKED_STRUCTS=1",
+					"PB_ENABLE_MALLOC=1",
+					"UNIT_TESTS=1",
+				);
 				INFOPLIST_FILE = EldersFirebaseRemoteConfigTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -413,6 +613,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.elders.EldersFirebaseRemoteConfigTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) UNIT_TESTS";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
