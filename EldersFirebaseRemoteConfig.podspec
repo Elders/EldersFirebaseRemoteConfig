@@ -14,6 +14,7 @@ Pod::Spec.new do |s|
   s.source_files  = "#{s.name}/**/*.swift", "#{s.name}/**/*.{h,m}"
   s.public_header_files = "#{s.name}/**/*.h"
   s.exclude_files = "#{s.name}/scripts/**/*.swift"
+  s.preserve_paths = "#{s.name}/scripts"
   
   s.static_framework = true
 
