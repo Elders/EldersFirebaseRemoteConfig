@@ -70,6 +70,9 @@
 		E618AEE8260383C60000FD0C /* ApplicationUpdateTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationUpdateTests.swift; sourceTree = "<group>"; };
 		E618AEEC260384470000FD0C /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		E618AEEF260384680000FD0C /* Podfile.lock */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile.lock; sourceTree = "<group>"; };
+		E618AEF226038A930000FD0C /* EldersFirebaseRemoteConfig.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = EldersFirebaseRemoteConfig.podspec; sourceTree = "<group>"; };
+		E618AEF326038B520000FD0C /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		E618AF12260393520000FD0C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +122,9 @@
 				E618AEEC260384470000FD0C /* .gitignore */,
 				E618AE6B26025A340000FD0C /* Podfile */,
 				E618AEEF260384680000FD0C /* Podfile.lock */,
+				E618AEF226038A930000FD0C /* EldersFirebaseRemoteConfig.podspec */,
+				E618AEF326038B520000FD0C /* LICENSE */,
+				E618AF12260393520000FD0C /* README.md */,
 				E618AE2C2602550C0000FD0C /* EldersFirebaseRemoteConfig */,
 				E618AE372602550C0000FD0C /* EldersFirebaseRemoteConfigTests */,
 				E618AE2B2602550C0000FD0C /* Products */,
@@ -518,6 +524,7 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.0.0.0;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -529,6 +536,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.elders.EldersFirebaseRemoteConfig;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -544,6 +552,7 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.0.0.0;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -555,6 +564,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.elders.EldersFirebaseRemoteConfig;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;

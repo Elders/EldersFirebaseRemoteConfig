@@ -1,9 +1,4 @@
 PODS:
-  - Firebase/CoreOnly (7.8.1):
-    - FirebaseCore (= 7.8.0)
-  - Firebase/RemoteConfig (7.8.1):
-    - Firebase/CoreOnly
-    - FirebaseRemoteConfig (~> 7.8.0)
   - FirebaseABTesting (7.8.0):
     - FirebaseCore (~> 7.0)
   - FirebaseCore (7.8.0):
@@ -45,11 +40,10 @@ PODS:
   - PromisesObjC (1.2.12)
 
 DEPENDENCIES:
-  - Firebase/RemoteConfig
+  - FirebaseRemoteConfig
 
 SPEC REPOS:
   trunk:
-    - Firebase
     - FirebaseABTesting
     - FirebaseCore
     - FirebaseCoreDiagnostics
@@ -61,7 +55,6 @@ SPEC REPOS:
     - PromisesObjC
 
 SPEC CHECKSUMS:
-  Firebase: d59ad4129167f9f0d2a4f6c1f0c462254b6002c8
   FirebaseABTesting: 44acbfc9db915bca8f111ebae342da6fd4f1cc55
   FirebaseCore: 049029df3096e5c118917029be7da75ee16f3b1b
   FirebaseCoreDiagnostics: 066f996579cf097bdad3d7dc9a918d6b9e129c50
@@ -72,6 +65,6 @@ SPEC CHECKSUMS:
   nanopb: 59221d7f958fb711001e6a449489542d92ae113e
   PromisesObjC: 3113f7f76903778cf4a0586bd1ab89329a0b7b97
 
-PODFILE CHECKSUM: 8ea2284e2df8c14f178c03d465fd285fca68947a
+PODFILE CHECKSUM: 52c2a8203dd25c523cbca034b317d556a13efa45
 
 COCOAPODS: 1.10.1

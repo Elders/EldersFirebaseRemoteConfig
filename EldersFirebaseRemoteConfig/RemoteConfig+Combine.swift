@@ -6,7 +6,13 @@
 //
 
 import Foundation
-import Firebase
+import FirebaseRemoteConfig
+
+#if canImport(Combine)
+import Combine
+#else
+protocol ObservableObject {}
+#endif
 
 @available(iOS 13.0, *)
 extension RemoteConfig: ObservableObject {
@@ -16,7 +22,9 @@ extension RemoteConfig: ObservableObject {
         
         DispatchQueue.main.async {
             
+            #if canImport(Combine)
             self.objectWillChange.send()
+            #endif
         }
     }
 }

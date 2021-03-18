@@ -4,7 +4,7 @@ use_frameworks!
 
 target 'EldersFirebaseRemoteConfig' do
 
-  pod 'Firebase/RemoteConfig'
+  pod 'FirebaseRemoteConfig'
 
   target 'EldersFirebaseRemoteConfigTests' do
   end

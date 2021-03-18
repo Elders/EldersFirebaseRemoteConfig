@@ -5,7 +5,7 @@
 //  Created by Milen Halachev on 18.03.21.
 //
 
-@import Firebase;
+@import FirebaseRemoteConfig;
 
 NS_ASSUME_NONNULL_BEGIN
 

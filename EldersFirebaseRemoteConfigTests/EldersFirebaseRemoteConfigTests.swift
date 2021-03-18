@@ -6,7 +6,7 @@
 //
 
 import XCTest
-import Firebase
+import FirebaseRemoteConfig
 @testable import EldersFirebaseRemoteConfig
 
 class EldersFirebaseRemoteConfigTests: XCTestCase {
