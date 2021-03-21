@@ -73,6 +73,14 @@
     }
 }
 
+- (void)fetchWithExpirationDuration:(NSTimeInterval)expirationDuration completionHandler:(void (^)(FIRRemoteConfigFetchStatus, NSError * _Nullable))completionHandler {
+    
+    if (completionHandler) {
+        
+        completionHandler(FIRRemoteConfigFetchStatusSuccess, nil);
+    }
+}
+
 - (void)activateWithCompletion:(void (^)(BOOL, NSError * _Nullable))completion {
     
     if (completion) {

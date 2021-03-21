@@ -23,8 +23,8 @@
 
 + (void)load {
     
-    Method oldFetch = class_getInstanceMethod([self class], @selector(fetchWithCompletionHandler:));
-    Method newFetch = class_getInstanceMethod([self class], @selector(swizzled_fetchWithCompletionHandler:));
+    Method oldFetch = class_getInstanceMethod([self class], @selector(fetchWithExpirationDuration:completionHandler:));
+    Method newFetch = class_getInstanceMethod([self class], @selector(swizzled_fetchWithExpirationDuration:completionHandler:));
     method_exchangeImplementations(oldFetch, newFetch);
     
     Method oldActivate = class_getInstanceMethod([self class], @selector(activateWithCompletion:));
@@ -32,9 +32,9 @@
     method_exchangeImplementations(oldActivate, newActivate);
 }
 
-- (void)swizzled_fetchWithCompletionHandler:(void (^)(FIRRemoteConfigFetchStatus, NSError * _Nullable))completionHandler {
+-(void)swizzled_fetchWithExpirationDuration:(NSTimeInterval)expirationDuration completionHandler:(void (^)(FIRRemoteConfigFetchStatus, NSError * _Nullable))completionHandler {
     
-    [self swizzled_fetchWithCompletionHandler:^(FIRRemoteConfigFetchStatus status, NSError * _Nullable error) {
+    [self swizzled_fetchWithExpirationDuration:expirationDuration completionHandler:^(FIRRemoteConfigFetchStatus status, NSError * _Nullable error) {
         
         if (completionHandler) {
         
