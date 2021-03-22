@@ -74,7 +74,7 @@ This works by moking the  `RemoteConfig`  behaviour and allows it to work with t
 
 #### Predefined keys and values for required and recommended updates
 
-The library defines a common structure and config access for requried and recommended updates. These are just an optional interface that you can leverage on to quickly implement a force update mechanism in your app.
+The library defines a common structure and config access for required and recommended updates. These are just an optional interface that you can leverage on to quickly implement a force update mechanism in your app.
 
 -  `RemoteConfig.recommendedUpdate` - represents an update of the app that is recommended for install.
 -  `RemoteConfig.requiredUpdate` - represents an update of the app that is required to install.
@@ -113,7 +113,7 @@ The `download` is a URL from where the update should be download. This is typica
 The `version` is the target version based on which the update is reported to be applicable.
 In this example, the build number `500` is greater than the application's build number `400`, so the update's `isApplicable` property will return `true`.
 
-You can ommit the build number in the remote config.
+You can omit the build number in the remote config.
 For example if you supply `1.2.3`  - this will make `isApplicable` property will return `false`.
 For example if you supply `1.2.4`  - this will make `isApplicable` property will return `true`.
 
@@ -134,17 +134,17 @@ if let update = RemoteConfig.remoteConfig().recommendedUpdate, update.isApplicab
 ```
 Depending on your needs, you can handle each use case accordingly, however here are some recommendations:
 - if you use required updates - update the remote config and check for updates when your app becomes active - this way if the user manage to dismiss your blocking dialog, you can recover from it quickly
-- if you use recommeded updates - update the remote config and check for updates at least once when your app starts
+- if you use recommended updates - update the remote config and check for updates at least once when your app starts
 - based on your needs, you can implement mechanism to allow users to postpone updates, etc ...
 
-The library declares and delivers the remote config for the updates and check whenever an update is applicable - how you will interpred, use and hadnle these updates is in your hands.
+The library declares and delivers the remote config for the updates and check whenever an update is applicable - how you will interpret, use and handle these updates is in your hands.
 
 #### CI scripts
 
 The library also includes the following swift scripts which you can use on your CI.
-They work with a service account JSON key for authentiation. For more information see [Using OAuth 2.0 for Server to Server Applications](https://developers.google.com/identity/protocols/oauth2/service-account)
+They work with a service account JSON key for authentication. For more information see [Using OAuth 2.0 for Server to Server Applications](https://developers.google.com/identity/protocols/oauth2/service-account)
 
 - `get_service_account_project_id` - this scripts parses the service account JSON and outputs the `project_id`
 - `generate_service_account_jws` - this scripts generates the JWS needed to get access token from google, based on the service account JSON
 - `get_service_account_token_url` - this scripts parses the service account JSON and outputs the `token_uri`
-- `set_remote_config_recommended_update` - this script updates the firbase remote config with provided version, download url, platform and service account JSON
+- `set_remote_config_recommended_update` - this script updates the firebase remote config with provided version, download url, platform and service account JSON

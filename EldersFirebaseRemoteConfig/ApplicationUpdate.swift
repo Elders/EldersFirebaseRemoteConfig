@@ -18,7 +18,7 @@ public struct ApplicationUpdate: Codable {
     
     ///Returns whenever the update can be applied to the current app.
     ///
-    ///This function comapres whenever the application `CFBundleVersion` is less than the one in the receiver and returns `true`. Otherise returns `false`.
+    ///This function compares whenever the application `CFBundleVersion` is less than the one in the receiver and returns `true`. Otherwise returns `false`.
     public var isApplicable: Bool {
         
         return Version.application.map { $0 < self.version } ?? false
