@@ -57,7 +57,7 @@
 		E618AE51260256A70000FD0C /* set_remote_config_recommended_update.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = set_remote_config_recommended_update.swift; sourceTree = "<group>"; };
 		E618AE52260256A70000FD0C /* get_service_account_token_url.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = get_service_account_token_url.swift; sourceTree = "<group>"; };
 		E618AE53260256A70000FD0C /* ApplicationUpdate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationUpdate.swift; sourceTree = "<group>"; };
-		E618AE6B26025A340000FD0C /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		E618AE6B26025A340000FD0C /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		E618AE88260348FF0000FD0C /* RemoteConfig+Combine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RemoteConfig+Combine.swift"; sourceTree = "<group>"; };
 		E618AE8C2603499A0000FD0C /* RemoteConfig+Update.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RemoteConfig+Update.h"; sourceTree = "<group>"; };
 		E618AE8D2603499A0000FD0C /* RemoteConfig+Update.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "RemoteConfig+Update.m"; sourceTree = "<group>"; };

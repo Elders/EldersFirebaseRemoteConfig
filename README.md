@@ -9,6 +9,7 @@ This library provides the following convenience extensions to the firebase remot
 3. Combine support
 4. SwiftUI support
 5. Predefined keys and values for required and recommended updates
+6. CI scripts
 
 ## Installation
 
@@ -137,3 +138,13 @@ Depending on your needs, you can handle each use case accordingly, however here 
 - based on your needs, you can implement mechanism to allow users to postpone updates, etc ...
 
 The library declares and delivers the remote config for the updates and check whenever an update is applicable - how you will interpred, use and hadnle these updates is in your hands.
+
+#### CI scripts
+
+The library also includes the following swift scripts which you can use on your CI.
+They work with a service account JSON key for authentiation. For more information see [Using OAuth 2.0 for Server to Server Applications](https://developers.google.com/identity/protocols/oauth2/service-account)
+
+- `get_service_account_project_id` - this scripts parses the service account JSON and outputs the `project_id`
+- `generate_service_account_jws` - this scripts generates the JWS needed to get access token from google, based on the service account JSON
+- `get_service_account_token_url` - this scripts parses the service account JSON and outputs the `token_uri`
+- `set_remote_config_recommended_update` - this script updates the firbase remote config with provided version, download url, platform and service account JSON
