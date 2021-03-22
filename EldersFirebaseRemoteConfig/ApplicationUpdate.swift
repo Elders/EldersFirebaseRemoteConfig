@@ -7,11 +7,18 @@
 
 import Foundation
 
+///A type that represents an application update.
 public struct ApplicationUpdate: Codable {
     
+    ///The version of the update.
     public var version: Version
+    
+    ///The URL at which the update can be downloaded.
     public var download: URL
     
+    ///Returns whenever the update can be applied to the current app.
+    ///
+    ///This function comapres whenever the application `CFBundleVersion` is less than the one in the receiver and returns `true`. Otherise returns `false`.
     public var isApplicable: Bool {
         
         return Version.application.map { $0 < self.version } ?? false
@@ -28,6 +35,11 @@ extension ApplicationUpdate: Identifiable {
 
 extension ApplicationUpdate {
     
+    ///A type representing a version in the following format: `X.Y.Z.a`
+    ///- X is the major number (required)
+    ///- Y is the minor number (required)
+    ///- Z is the patch number (required)
+    ///- a is the build number (optional)
     public struct Version: RawRepresentable, Comparable, Codable {
         
         public let rawValue: String
@@ -37,6 +49,7 @@ extension ApplicationUpdate {
         public let patch: Int
         public let build: Int?
         
+        ///Creates an instance of the receiver with a String rawValue.
         public init?(rawValue: String) {
             
             let components = rawValue.split(separator: ".").compactMap({ Int($0) })

@@ -10,12 +10,16 @@ import FirebaseRemoteConfig
 
 extension RemoteConfig.Key {
     
-    static let recommendedUpdate: Self = "ios_recommended_update"
-    static let requiredUpdate: Self = "ios_required_update"
+    ///The key for a recommended update
+    static var recommendedUpdate: Self = "ios_recommended_update"
+    
+    ///The key for a required update
+    static var requiredUpdate: Self = "ios_required_update"
 }
 
 extension RemoteConfig {
     
+    ///Returns the recommended update, if any.
     open var recommendedUpdate: ApplicationUpdate? {
         
         guard
@@ -30,6 +34,7 @@ extension RemoteConfig {
         return result
     }
     
+    ///Returns the required update, if any.
     open var requiredUpdate: ApplicationUpdate? {
         
         guard

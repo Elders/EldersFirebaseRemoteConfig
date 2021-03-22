@@ -10,6 +10,7 @@ import FirebaseRemoteConfig
 
 extension RemoteConfig {
 
+    ///A config key
     public struct Key: RawRepresentable, Hashable {
 
         public var rawValue: String
@@ -20,11 +21,15 @@ extension RemoteConfig {
         }
     }
 
+    ///Gets a config value for a given key.
+    ///- parameter key: The config key for which to get the value.
     public func configValue(for key: Key) -> RemoteConfigValue {
 
         return self.configValue(forKey: key.rawValue)
     }
 
+    ///Sets config defaults for parameter keys and values in the default namespace config.
+    ///- parameter defaults: A dictionary containing mapping of default values for keys.
     public func setDefaults(_ defaults: [Key: NSObject]?) {
 
         self.setDefaults(defaults?.map())
@@ -33,6 +38,7 @@ extension RemoteConfig {
 
 extension RemoteConfig.Key: ExpressibleByStringLiteral {
 
+    ///Creates an isntance of the recevied with a String literal
     public init(stringLiteral value: StringLiteralType) {
         
         self.init(rawValue: value)
