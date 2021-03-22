@@ -1,11 +1,11 @@
 Pod::Spec.new do |s|
 
   s.name         = "EldersFirebaseRemoteConfig"
-  s.version      = "1.0.0"
+  s.version      = "1.1.0"
   s.source       = { :git => "https://github.com/Elders/#{s.name}.git", :tag => "#{s.version}" }
   s.license      = { :type => "MIT", :file => "LICENSE" }
   s.author       = "Milen Halachev"
-  s.summary      = "Convenience Firebase Remote Config"
+  s.summary      = "Convenience Firebase Remote Config + Combine + SwiftUI"
   s.homepage     = "https://github.com/Elders/#{s.name}"
 
   s.swift_version = "5.3"
