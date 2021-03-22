@@ -115,3 +115,25 @@ In this example, the build number `500` is greater than the application's build 
 You can ommit the build number in the remote config.
 For example if you supply `1.2.3`  - this will make `isApplicable` property will return `false`.
 For example if you supply `1.2.4`  - this will make `isApplicable` property will return `true`.
+
+After you define and publish your remote config, you can check from your app whenever an update is available and applicable.
+
+```
+//check for required update
+if let update = RemoteConfig.remoteConfig().requiredUpdate, update.isApplicable {
+    
+    //show a blocking dialog to the user to inform him about the update
+}
+
+//check for recommended update
+if let update = RemoteConfig.remoteConfig().recommendedUpdate, update.isApplicable {
+    
+    //show a dialog to the user to inform him about the update
+}
+```
+Depending on your needs, you can handle each use case accordingly, however here are some recommendations:
+- if you use required updates - update the remote config and check for updates when your app becomes active - this way if the user manage to dismiss your blocking dialog, you can recover from it quickly
+- if you use recommeded updates - update the remote config and check for updates at least once when your app starts
+- based on your needs, you can implement mechanism to allow users to postpone updates, etc ...
+
+The library declares and delivers the remote config for the updates and check whenever an update is applicable - how you will interpred, use and hadnle these updates is in your hands.
