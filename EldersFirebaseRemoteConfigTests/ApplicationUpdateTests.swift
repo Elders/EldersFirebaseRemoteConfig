@@ -71,4 +71,18 @@ class ApplicationUpdateTests: XCTestCase {
         
         XCTAssertNotEqual(ApplicationUpdate.Version(rawValue: "1.2.3")!, ApplicationUpdate.Version(rawValue: "1.2.3.4")!)
     }
+    
+    func testVersionComaprisonCornerCases() {
+        
+        XCTAssertFalse(ApplicationUpdate.Version(rawValue: "1.3.0.0")! < ApplicationUpdate.Version(rawValue: "1.2.2")!)
+        XCTAssertFalse(ApplicationUpdate.Version(rawValue: "1.3.0.0")! < ApplicationUpdate.Version(rawValue: "1.0.2")!)
+        XCTAssertFalse(ApplicationUpdate.Version(rawValue: "1.3.0.0")! < ApplicationUpdate.Version(rawValue: "1.2.0")!)
+        XCTAssertFalse(ApplicationUpdate.Version(rawValue: "1.3.0.0")! < ApplicationUpdate.Version(rawValue: "1.2.2.5")!)
+        XCTAssertFalse(ApplicationUpdate.Version(rawValue: "2.0.0.0")! < ApplicationUpdate.Version(rawValue: "1.2.2.5")!)
+        XCTAssertFalse(ApplicationUpdate.Version(rawValue: "2.0.5.0")! < ApplicationUpdate.Version(rawValue: "1.2.2.5")!)
+        XCTAssertFalse(ApplicationUpdate.Version(rawValue: "2.0.5.7")! < ApplicationUpdate.Version(rawValue: "1.2.2.5")!)
+        XCTAssertFalse(ApplicationUpdate.Version(rawValue: "2.4.5.7")! < ApplicationUpdate.Version(rawValue: "1.2.2.5")!)
+        
+        XCTAssertTrue(ApplicationUpdate.Version(rawValue: "1.1.0.0")! < ApplicationUpdate.Version(rawValue: "1.2.0")!)
+    }
 }

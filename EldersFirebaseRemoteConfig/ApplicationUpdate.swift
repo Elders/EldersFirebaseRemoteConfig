@@ -76,10 +76,18 @@ extension ApplicationUpdate {
         
         public static func < (lhs: Version, rhs: Version) -> Bool {
             
-            return lhs.major < rhs.major
-                || lhs.minor < rhs.minor
-                || lhs.patch < rhs.patch
-                || lhs.build ?? 0 < rhs.build ?? 0
+            if lhs.major < rhs.major { return true }
+            if lhs.major > rhs.major { return false }
+            
+            if lhs.minor < rhs.minor { return true }
+            if lhs.minor > rhs.minor { return false }
+            
+            if lhs.patch < rhs.patch { return true }
+            if lhs.patch > rhs.patch { return false }
+            
+            if lhs.build ?? 0 < rhs.build ?? 0 { return true }
+            
+            return false
         }
     }
 }
