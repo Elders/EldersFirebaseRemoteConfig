@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   s.exclude_files = "#{s.name}/scripts/**/*.swift"
   s.preserve_paths = "#{s.name}/scripts"
   
-  s.static_framework = true
+  s.static_framework = false
 
   s.dependency 'FirebaseRemoteConfig'
   
