@@ -17,6 +17,13 @@ This library provides the following convenience extensions to the firebase remot
 
 Add `pod 'EldersFirebaseRemoteConfig'` to your  `Podfile`
 
+Currently the library is linked as static, because several firebase pods are linked statically. 
+Because of this, SwiftUI previews are getting broken.
+Unfortunately cocoapods does not allow pushing a dynamic library pod that depends on static lirbary pods.
+If you wish to use the remote config SwiftUI previews, you have to use the alternative podspec that links as dynamic library, as following:
+
+`pod 'EldersFirebaseRemoteConfig', :git => 'https://github.com/Elders/EldersFirebaseRemoteConfig.git', :branch => 'fix_swiftui_previews'`
+
 ## Usage
 
 #### Strongly typed keys 
